@@ -1,0 +1,66 @@
+.pager__results .pager__link {
+  border: none;
+}
+
+.pager__link--is-active {
+  border: none;
+}
+
+#edit-reset {
+  display: unset;
+}
+
+em {
+  font-style: italic;
+}
+
+details.digitalia-muni-pictura-nfields-details {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* why not applying */
+.field--label-above {
+  padding-bottom: 1em !important;
+}
+
+/* Display image at top right of record page */
+.view-display-id-entity_view_1 {
+  float: right;
+  margin-left: 2rem;
+  max-width: 60%;
+}
+
+.field.field--type-entity-reference.clearfix::after {
+  clear: none;
+}
+
+@media (max-width: 768px) {
+.view-display-id-entity_view_1 {
+    float: none;
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
+
+
+/* advanced search */
+.advanced-search-view .view-filters {
+  display: none;
+}
+
+.advanced-search-view.view-grid > .view-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width: 600px) {
+  .advanced-search-view.view-grid > .view-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+div[class$="iconotheca-jumbotron"] > div.content {
+    background-image: url('/themes/custom/islandora_muni/platform_specific/images/banner-iconotheca.png');
+}
